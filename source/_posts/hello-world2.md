@@ -4,15 +4,10 @@ title: Hello World
 date: 2020/03/20
 
 tags:
-  - test1
-  - test2
-  - test3
+  - test
 
 categories:
   - hope
-
-photos
-  - "https://opencollective.com/pug/sponsor/1/avatar.svg"
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 

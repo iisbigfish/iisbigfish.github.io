@@ -1,0 +1,30 @@
+li.postItem.list-unstyled.m-2(style="")
+    p.
+        +------------------------+
+    p.d-flex.justify-content-between
+        span |
+        span.flex-grow-1 $curl !{post.title}
+        span |
+    p.d-flex.justify-content-between
+        span |
+        span.flex-grow-1=post.date.format('YYYY-DD-MM,hh:mm:ss')
+        span |
+    p.d-flex.justify-content-between
+        span |
+        span.flex-grow-1.text-truncate
+            each tag, index in post.tags.data
+                if index
+                    span.tagName.ml-1.mr-1 !{tag.name}
+                else
+                    span.tagName.mr-1 !{tag.name}
+        span |
+    p.d-flex.justify-content-between
+        span |
+        span
+        span |
+    p.d-flex.justify-content-between
+        span |
+        span
+        span |
+    p.
+        +------------------------+

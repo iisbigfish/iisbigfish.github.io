@@ -1,6 +1,22 @@
 doctype html
 meta(charset="utf-8")
+link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+
 link(rel="stylesheet" href="css/styles.css")
-h1 随记
+
+form(action='/' method="get")
+    span $curl pandacat.xyz/
+    input(name='post' autofocus type="text" list="postList")
+    datalist#postList
+        each post in site.posts.data
+            option(value=post.title)
+pre.
+    ______   ______     __   __     _____     ______     ______     ______     ______
+    /\  == \ /\  __ \   /\ "-.\ \   /\  __-.  /\  __ \   /\  ___\   /\  __ \   /\__  _\
+    \ \  _-/ \ \  __ \  \ \ \-.  \  \ \ \/\ \ \ \  __ \  \ \ \____  \ \  __ \  \/_/\ \/
+     \ \_\    \ \_\ \_\  \ \_\\"\_\  \ \____-  \ \_\ \_\  \ \_____\  \ \_\ \_\    \ \_\
+      \/_/     \/_/\/_/   \/_/ \/_/   \/____/   \/_/\/_/   \/_____/   \/_/\/_/     \/_/
+
 section !{body}
+
 script(src="js/index.js")
